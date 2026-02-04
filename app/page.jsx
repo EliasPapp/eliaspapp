@@ -19,60 +19,69 @@ export default function Page() {
 
       <body>
         <main>
-          <img className="avatar" src="images/profile-pic.png" alt="Profile picture" />
+          <header>
+            <img className="avatar" src="images/profile-pic.png" alt="Profile picture" />
 
-          <h1>Elias Papp</h1>
+            <h1>Elias Papp</h1>
 
-          <h2>Web & game developer</h2>
+            <h2>Web developer</h2>
 
-          <p>Hungarian-Brazilian professional with 5 years of experience in IT</p>
+            <p>Hungarian-Brazilian professional with 5 years of experience in IT</p>
+          </header>
 
-          <ul>
-            <li>
-              <TextButton
-                text="Youtube portfolio"
-                url="https://www.youtube.com/@EliasPappBR"
-              />
-            </li>
+          <section>
+            <ul>
+              <li>
+                <TextButton
+                  text="Youtube portfolio"
+                  url="https://www.youtube.com/@EliasPappBR"
+                />
+              </li>
 
-            <li>
-              <TextButton
-                text="Instagram portfolio"
-                url="https://www.instagram.com/elias.papp.gamedev"
-              />
-            </li>
+              <li>
+                <TextButton
+                  text="Instagram portfolio"
+                  url="https://www.instagram.com/elias.papp.gamedev"
+                />
+              </li>
+            </ul>
+          </section>
 
-            <li>
-              <TextButton
-                text="Newgrounds account"
-                url="https://1999elias.newgrounds.com/"
-              />
-            </li>
-          </ul>
+          <section>
+            <ul className="icon-buttons-container">
+              <li>
+                <IconButton
+                  icon="linkedin-square"
+                  url="https://www.linkedin.com/in/elias-papp"
+                />
+              </li>
 
-          <ul className="icon-buttons-container">
-            <li>
-              <IconButton
-                icon="linkedin-square"
-                url="https://www.linkedin.com/in/elias-papp"
-              />
-            </li>
+              <li>
+                <IconButton
+                  icon="github"
+                  url="https://github.com/EliasPapp"
+                />
+              </li>
+              
+              {/* <li>
+                <IconButton
+                  icon="file-text"
+                  url="_"
+                />
+              </li> */}
 
-            <li>
-              <IconButton
-                icon="github"
-                url="https://github.com/EliasPapp"
-              />
-            </li>
-
-            <li>
-              <IconButton
-                icon="instagram"
-                url="https://www.instagram.com/elias.papp"
-              />
-            </li>
-          </ul>
+              <li>
+                <IconButton
+                  icon="instagram"
+                  url="https://www.instagram.com/elias.papp"
+                />
+              </li>
+            </ul>
+          </section>
         </main>
+        <footer>
+          <p>2026 Developed by Elias Papp</p>
+        </footer>
       </body>
     </html>
   )
